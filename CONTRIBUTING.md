@@ -1,162 +1,100 @@
-# Contribution Guidelines [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) 🤝🏽🍀:
+<h1 align="center"><b>Guidelines for Contribution</b></h1> 
 
 <p align="center"><img src="./readme_assets/Contribute.png" width=600></p>
 
+We want to make contributing to this project as easy and as transparent as possible, whether it's:<br>
 
-#### Preliminaries:
-- Download and install the latest stable version of [Git](https://git-scm.com/downloads) 📥 for version control
-- Create a [Github](https://github.com/join) Account 📇 
-- Download and install latest stable version of [NodeJS](https://nodejs.org/en/download/)
-- Download and install latest stable version of [VS Code](https://code.visualstudio.com/download)
+- Reporting a bug :bug:
 
-- Fork [this](https://github.com/smaranjitghose/doc2pen) repository 
-<p align = "center"><img src="/readme_assets/Fork%20Project.png?raw=true" width="500" height="200"/></p>
+- Submitting a fix :mag_right:
 
+- Proposing new features :bulb:
 
-- Open Terminal/Command Prompt/Powershell/Git Bash and navigate to a location where you want the project files to be stored
-```
-cd D:\my_preferred_location
-```
-- Clone your forked repository 🧩.
-```
-git clone https://github.com/<your_user_name>/doc2pen.git
-```
-- Now move inside the project directory 📁 (using the terminal).
-```
-cd doc2pen
-```
-- Check for the current remotes of the git repository (the local copy of your forked repository)
-```
-git remote --verbose
-```
-- Add add a reference to the upstream(this repository which you clones) repository.
-```
-git remote add upstream https://github.com/smaranjitghose/doc2pen.git
-```
+If you wish to contribute to this project, please raise an issue and wait for the project maintainers to approve it or give feedback
 
-- Install the dependencies and packages
- ```
- npm install
- ```
-- Start the react app in the local server in development mode 
-```
-npm start
-```
+<h2 align="center"><b>How to make a Pull Request? :point_down:</b></h2>
 
-> ### Using Docker to run the web app
-> 
-> - Install [Docker](https://docs.docker.com/engine/install/) if you don't have it already.
->  
-> - Build the project
->  
->  ``docker-compose build``
->   
-> - Run the docker container
->   
->   ``docker compose up``
+<p align="center"><img src="https://camo.githubusercontent.com/2c885464740a6c05b127ecb7c3ebb9e5cc67ba1c/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4a717a616442746f6e4a56723075384c55672f67697068792e676966" width=500></p>
 
+**1.**  Fork [this](https://github.com/smaranjitghose/awesome-portfolio-websites) repository.
 
-- Open your favourite browser and navigate to `http://localhost:3000` to view the current version of the app
-
-
-- Open the project files in VSCode (assuming you have already opened the terminal and navigated inside the project directory)
+**2.**  Clone your forked copy of the project.
 
 ```
-code .
+git clone --depth 1 https://github.com/<your_user_name>/awesome-portfolio-websites.git
+```
+<img src="./readme_assets/CloneRepo.png" width="500">
+
+**3.** Navigate to the project directory :file_folder: .
+
+```
+cd awesome-portfolio-websites
 ```
 
-- Fetch any recent changes from the upstream repository
+**4.** Add a reference to the original repository.
+
+```
+git remote add upstream https://github.com/smaranjitghose/awesome-portfolio-websites.git 
+```
+
+**5.** Check the remotes for this repository.
+
+```
+git remote -v
+```
+
+**6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
 
 ```
 git pull upstream master
 ```
 
-- Comment on any existing [issue(s)](https://github.com/smaranjitghose/doc2pen/issues) raised by **project maintainers** [@smaranjitghose or @anushbhatia]. Otherwise raise a [new issue](https://github.com/smaranjitghose/doc2pen/issues/new).
+**7.** Create a new branch.
 
+```
+git checkout -b <your_branch_name>
+```
 
-
-
-
-
-> ## Guidelines for raising a new issue:
->
-> - Each issue should have an appropriate and short title like "Bug in Upload Page"
-> 
-> - Be specific about your intended changes/suggestions
->
-> - Refrain from using phrases like "Hi, I am ..", "Please assign me this issue", "Thank You..", etc. We are only interested in technical parts
->
-> - Attach a screenshot/clip if applicable
->
-> - Please be patient enough. The project maintainers/mentors would review it as per their schedule. Please do not start putting comments like "Please check this" etc.
->  
-> - Do not blindly comment on issues raised by other participant(s). Unless a minimum of 48 hours has passed since their assignment, the issue would not be re-assigned(excluding certain cases). The issue raised by a participant will always to be assigned to him/her by default. Do not spam "Interested", "Please assign me" in others issues. 
-> 
-> - Always keep a note of the deadline. 
-
-- Once the project maintainer(s)/mentor(s) have reviewed the issue/assigned you the issue. Start working on the changes
-
-- Create a new feature branch (DO NOT name it MAIN or MASTER or anything random).
-   ```
-   git checkout -b <your_branch_name>
-   ```
-- Finish your work
-
-- Make sure that you do not change any code unrelated to the task that you have been assigned
-
-- Ensure that your changes apply to all screensizes
-
-- Comment any new code addition(s)
-
-- Do not mess up the directory structure
-
-- Preview your changes and test them properly before proceding ahead
+**8.** Perfom your desired changes to the code base.
 
 <p align="center"><img width=35% src="https://media2.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif?cid=ecf05e47pzi2rpig0vc8pjusra8hiai1b91zgiywvbubu9vu&rid=giphy.gif"></p>
 
-- Make a small clip or take screenshots.
+**9.** Track your changes:heavy_check_mark: .
 
-- Stage your changes.
 ```
-git add .
-```
-- Commit the changes.
-```
-git commit -m "message relevant to your changes (usually title of the pull request)"
+git add . 
 ```
 
-- **Make sure to condense your changes into a single commit**. [Reference](https://levelup.gitconnected.com/how-to-squash-git-commits-9a095c1bc1fc)
+**10.** Commit your changes .
 
-- Push the changes to your remote repository on GitHub.
 ```
-git push origin <your_branch_name>
+git commit -m "Relevant message"
 ```
 
-- Click on `compare and pull requests` to create a pull request
-<p align="center"><img src="/readme_assets/ComparePR.png?raw=true"/></p>
+**11.** Push the committed changes in your feature branch to your remote repo.
 
-> ## Guidelines for raising a pull request:
->
-> - Each pull request should have an appropriate and short title like "Fixed Bug in Upload Page"
-> 
-> - Describe your intended changes in the description section of the pull request (Use bullet points and phrases) 
->
-> - Refrain from using phrases like "Hi, I am ..", "Please merge me this OPR", "Thank You..", etc. We are only interested in technical parts
->
-> - Attach a screenshot/clip of the change(s)
->
-> - Make sure to refer the respective issue in the respective PR using phrases like `Resolves #issue_number` or `Closes #issue_number`.  
->
-> - Please be patient enough. The project maintainers/mentors would review it as per their schedule. Please do not start putting comments like "Please check this" etc.
->  
-> - Although we support feedback from everyone in all phases of development, it is highly advised not to put any negative comments in other participant's pull requests.
-> 
-> - Always keep a note of the deadline. 
+```
+git push -u origin <your_branch_name>
+```
 
-<p align="center"><img src="/readme_assets/PR.JPG?raw=true" height="350" width="450"/></p>
+**12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
+
+<img src="./readme_assets/ComparePR.png" width=600>
+
+**13.** Then add an appropriate title and description to your pull request that explains your changes and efforts done.
 
 
-# Open Source Program Grading (Relevant for only for Project Maintainers)
+**14.** Click on `Create Pull Request`.
+
+<img src="./readme_assets/CreatePR.png" width=600>
+
+
+**15** Voila :exclamation: You have made a PR to the awesome-developer-portfolio project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days
+
+<p align="center"><img src="https://media.giphy.com/media/5mCQOcUfywmyI/giphy.gif" width=35%></p>
+
+
+# Open Source Program Grading
 
 
 ## [Script Winter of Code](https://swoc.tech/)
@@ -204,17 +142,3 @@ When accepting the PR, add the following label before merging it. user=<username
 
 - Add labels to PRs
 - Maintain a Contributor.MD for CrossWoC
-
-## [GirlScript Summer of Code 2021]()
-
-| Difficulty | Intent | Score |
-|------------|--------|-------|
-| Level0  | GSSOC Minor Documentation | 5 |
-| Level1  | GSSOC Major Documentation  | 10 |
-| Level2  | GSSOC Bug fixing, adding small features  | 25 |
-| Level3  | GSSOC New features, major bug fixing.  | 45 |
-
-#### Allotment:
-
-- Add labels to PRs [ Must add `gssoc21` label]
-
